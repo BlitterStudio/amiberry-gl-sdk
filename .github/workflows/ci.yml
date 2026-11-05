@@ -1,0 +1,33 @@
+# SPDX-FileCopyrightText: 2026 Dimitris Panokostas
+# SPDX-License-Identifier: MIT
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  reuse:
+    name: REUSE licensing check
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+      - uses: fsfe/reuse-action@v6
+
+  build:
+    name: Import libraries (m68k-amigaos-gcc10)
+    runs-on: ubuntu-24.04
+    container: amigadev/crosstools:m68k-amigaos-gcc10
+    steps:
+      - uses: actions/checkout@v6
+      - name: Build
+        run: make CC="m68k-amigaos-gcc -Werror"
+      - uses: actions/upload-artifact@v7
+        with:
+          name: amiberry-gl-sdk-import-libraries
+          path: lib/
