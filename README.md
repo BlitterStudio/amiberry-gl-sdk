@@ -23,7 +23,7 @@ prebuilt import libraries.
 
 | Path | Contents |
 |---|---|
-| `minigl/include` | `<proto/minigl.h>`, `<libraries/minigl.h>`, the dispatch ABI, the V30 FastPath and MiniGLOpen headers, and the ABI-sized GL, GLU and GLUT declarations |
+| `minigl/include` | `<proto/minigl.h>`, `<libraries/minigl.h>`, the dispatch ABI and the ABI-sized GL, GLU and GLUT declarations |
 | `minigl/client` | import library sources (`MiniGLOpen()` opens `minigl.library` and checks its ABI) |
 | `ogles/include` | `<proto/ogles3.h>`, `<proto/ogles2.h>`, the dispatch tables, the Khronos GLES2/GLES3/KHR headers |
 | `ogles/ogles3-interface`, `ogles/ogles2-interface` | ladislawv's interface headers and autodocs (`ogles3.doc`, `ogles2.doc`, `GettingStarted.txt`) |
@@ -93,7 +93,6 @@ Every file states its copyright holders and licence in an SPDX header, or in
 | `ogles/include/GLES2`, `GLES3`, `KHR` | MIT / Apache-2.0, The Khronos Group |
 | `ogles/ogles3-interface`, `ogles/ogles2-interface` | MIT, R-Typer and Ladislawv (`LICENSE` in each) |
 | `minigl/client`, `minigl/include/libraries/minigl.h`, `minigl_dispatch.h`, `proto/minigl.h`, `clib/minigl_protos.h` | Hyperion MiniGL Open Source License or zlib, at your choice, Steffen Haeuser (with Amiberry changes by Dimitris Panokostas) |
-| `minigl/include/libraries/minigl_fastpath.h`, `clib/minigl_open_protos.h` | Hyperion MiniGL Open Source License, Steffen Haeuser (with an Amiberry change to `minigl_fastpath.h`) |
 | `minigl/include/libraries/minigl_abi_types.h` (declarations from the MiniGL V30 SDK headers) | Hyperion MiniGL Open Source License |
 | `minigl/include/libraries/minigl_gl_tokens.h` | Apache-2.0, The Khronos Group |
 | `minigl/include/libraries/minigl_glu_tokens.h` | SGI-B-2.0, Silicon Graphics |

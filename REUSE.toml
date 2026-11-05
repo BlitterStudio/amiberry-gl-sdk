@@ -25,20 +25,6 @@ precedence = "aggregate"
 SPDX-FileCopyrightText = ["2025-2026 Steffen Haeuser", "2026 Dimitris Panokostas"]
 SPDX-License-Identifier = "LicenseRef-Hyperion-MiniGL OR Zlib"
 
-# His MiniGL V30 headers, not in the 2026-10-15 statement: Hyperion MiniGL
-# licence only. minigl_fastpath.h carries the Amiberry switch as well.
-[[annotations]]
-path = "minigl/include/clib/minigl_open_protos.h"
-precedence = "aggregate"
-SPDX-FileCopyrightText = "2025-2026 Steffen Haeuser"
-SPDX-License-Identifier = "LicenseRef-Hyperion-MiniGL"
-
-[[annotations]]
-path = "minigl/include/libraries/minigl_fastpath.h"
-precedence = "aggregate"
-SPDX-FileCopyrightText = ["2025-2026 Steffen Haeuser", "2026 Dimitris Panokostas"]
-SPDX-License-Identifier = "LicenseRef-Hyperion-MiniGL"
-
 # ladislawv's ogles2 and ogles3 public interface files, MIT upstream (the
 # LICENSE file in each directory).
 [[annotations]]
