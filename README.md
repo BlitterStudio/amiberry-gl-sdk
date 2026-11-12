@@ -33,7 +33,7 @@ prebuilt import libraries.
 ## Building the import libraries
 
 With AmigaPorts' m68k-amigaos-gcc, for example from the
-`amigadev/crosstools:m68k-amigaos-gcc10` Docker image:
+`amigadev/crosstools:m68k-amigaos` Docker image:
 
 ```sh
 make

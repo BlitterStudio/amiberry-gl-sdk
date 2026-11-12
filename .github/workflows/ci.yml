@@ -22,7 +22,7 @@ jobs:
   build:
     name: Import libraries (m68k-amigaos-gcc10)
     runs-on: ubuntu-24.04
-    container: amigadev/crosstools:m68k-amigaos-gcc10
+    container: amigadev/crosstools:m68k-amigaos
     steps:
       - uses: actions/checkout@v6
       - name: Build
