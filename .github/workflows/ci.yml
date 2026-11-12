@@ -20,7 +20,7 @@ jobs:
       - uses: fsfe/reuse-action@v6
 
   build:
-    name: Import libraries (m68k-amigaos-gcc10)
+    name: Import libraries (m68k-amigaos)
     runs-on: ubuntu-24.04
     container: amigadev/crosstools:m68k-amigaos
     steps:
